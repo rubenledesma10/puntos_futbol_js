@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntos para un equipo de fútbol con JS</title>
+</head>
+<body>
+    <h2>Programa para calcular puntos de un equipo de fútbol</h2>
+    <script>
+        function saltar_linea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+            document.write(frase);
+            saltar_linea();
+        }
+
+        var victorias = parseInt(prompt("Introduzca cuantas victorias tuvo su equipo: ")); //parseInt para que me transforme el texto en entero
+        var empate = parseInt(prompt("Introduzca cuantos empates tuvo su equipo: "));
+
+        puntos_total = victorias * 3 + empate;
+
+        imprimir("Su equipo tiene un total de " +puntos_total+ " puntos");
+        
+    </script>
+</body>
+</html>
